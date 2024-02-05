@@ -59,7 +59,7 @@ describe('Login spec', () => {
   it('should display homepage when username and password are correct', () => {
     cy.get('input[placeholder="Username"]').type('razor001');
 
-    cy.get('input[placeholder="Password"]').type('razor002');
+    cy.get('input[placeholder="Password"]').type('123456');
 
     cy.get('button')
       .contains(/^Login$/)
